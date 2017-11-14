@@ -1,0 +1,5 @@
+It should have a place to store ToDos
+It should have a place to display ToDos
+It should have a way to add Todos
+It should have a way to change a Todo
+It should have a way to delete a Todo
