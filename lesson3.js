@@ -56,12 +56,17 @@ var todoList = {
 		this.displayTodos();
 	}
 };
-var displayTodosButton = document.getElementById("displayTodosButton");
-var toggleAllButton = document.getElementById("toggleAllButton");
-console.log(displayTodosButton);
-displayTodosButton.addEventListener('click', function() {
+
+var handlers = {
+  displayTodos: function() {
 	todoList.displayTodos();
-});
-toggleAllButton.addEventListener('click', function() {
+  },
+  toggleAll: function() {
 	todoList.toggleAll();
-});
+  },
+  addTodo: function() {
+      var addTodoTextInput = document.getElementById("addTodoTextInput");
+      todoList.addTodo(addTodoTextInput.value);
+      addTodoTextInput.value = '';
+  }
+};
